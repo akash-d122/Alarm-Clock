@@ -1,0 +1,153 @@
+/* GLobal Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #0E141B;
+}
+
+
+select {
+  appearance: none;
+  outline: black;
+  margin-right: 0.3rem;
+  cursor: pointer;
+  background-color: wheat;
+  padding: 0.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 2rem;
+  color: #0E141B;
+  border-color: black;
+}
+
+.page-title{
+  background-color: #0E141B;
+  font-family:'Courier New', Courier, monospace;
+  align-items: center;
+  text-align: center;
+  color: wheat;
+  padding-top:150px;
+  margin-bottom: 3rem;
+  font-size:1.2rem;
+}
+
+.mb {
+  margin-bottom: 1rem;
+}
+
+/* End GLobal Styles */
+
+.main-container {
+  background-color: #0E141B;
+  min-height: 100vh;
+  align-items:flex-start;
+  justify-content:center;
+}
+
+.midle-container {
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  flex-flow: column;
+  justify-content: flex-start;
+  background-color: #fc8a07;
+}
+
+.present-time {
+  font-size: 2rem;
+  color: black;
+}
+
+.alarm-form {
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+.submit-button {
+  border-color: black;
+  border: 10px;
+  font-weight: bold;
+}
+
+.set-alarm-container {
+  width: 100%;
+}
+
+.set-alarm-container .set-alarm-container-title {
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.alarm {
+  justify-content: space-between;
+  border-radius: 30px;
+  padding: 0.5rem 1rem;
+  align-items: center;
+
+}
+.alarm .delete-alarm {
+  border-radius: 2rem;
+  background-color: rgba(30, 30, 18, 0.918);
+  font-weight: bold;
+  color: wheat;
+  font-size:xx-medium;
+}
+
+#delete-alarm:hover{
+  box-shadow: rgb(4, 147, 236) 2px 2px 2px 1px inset, #dad5cf -2px -2px 10px 1px inset;
+}
+
+
+.time {
+  color: #0E141B;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.btn:focus,
+.btn:hover {
+  box-shadow: rgb(12, 12, 12) 2px 2px 2px 1px inset, #fc8a07 -2px -2px 10px 1px inset;
+}
+
+
+
+.r-flex {
+  display: flex;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  background-color: wheat;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 1px;
+  transition: all 0.3s ease-in-out;
+}
+
+#submitButton{
+  border-radius:2rem;
+}
+
+
+/* style of devices of screen size less than 768px */
+@media only screen and (min-width: 600px) {
+  /* adding padding to container */
+  .main-container {
+    padding-block: 2rem;
+  }
+  .midle-container{
+      justify-content: center;
+      border-radius: 50px;
+      width: 450px;
+      min-height: auto;
+  }
+}
+
